@@ -11,6 +11,7 @@ contract PasswordStore {
     error PasswordStore__NotOwner();
 
     address private s_owner;
+    // cloud - this variable is not private, anyone can read it. we are in blockchain, everything is public.
     string private s_password;
 
     event SetNetPassword();
